@@ -1,0 +1,22 @@
+{
+  "name": "csv-concurrent-reader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && tsc-alias"
+  },
+  "keywords": [],
+  "author": "Angelo Soares <github.com/Th3Ang3lo>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@lucasaugustsof/eslint-config": "^1.0.1",
+    "@types/node": "^20.11.6",
+    "eslint": "^8.56.0",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.1"
+  }
+}
