@@ -42,7 +42,7 @@ Main function: `csvConcurrentReader(filePath, callback, concurrency, queueSize?,
 | `callback`   | `function`                 |     -     | A callback function executed for each data row.                                                                           |
 | `concurrency`| `number`                   |     -     | The number of functions to execute simultaneously.                                                                        |
 | `queueSize`  | `number`                   |   10000   | The total size of the internal queue.                                                                                     |
-| `options`    | `object`                   |     -     | CSV parsing options. Refer to the documentation of [csv-parser](https://github.com/mafintosh/csv-parser) for more details |
+| `options`    | `object`                   |     -     | CSV parsing options. Refer to the documentation of [csv-parser](https://github.com/mafintosh/csv-parser?tab=readme-ov-file#api) for more details |
 
 ### Dependencies
 - [fastq](https://github.com/mcollina/fastq): A lightweight, high-performance task queue.
