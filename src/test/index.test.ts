@@ -1,9 +1,9 @@
 import { describe, expect, it, vi } from "vitest";
 import path from "path";
 
-import concurrentReader from "..";
+import csvConcurrentReader from "..";
 
-const name = concurrentReader.name;
+const name = csvConcurrentReader.name;
 
 describe(`Testing "${name}" function`, () => {
     it(`[${name}] Should process csv line by line 10 times`, async () => {
@@ -19,7 +19,7 @@ describe(`Testing "${name}" function`, () => {
 
         const filePath = path.resolve(__dirname, "files", "test.csv");
 
-        await concurrentReader(filePath, mock.callback, 100);
+        await csvConcurrentReader(filePath, mock.callback, 100);
 
         expect(callbackMock).toBeCalledTimes(10);
     });

@@ -5,7 +5,7 @@ import { CSVUtil } from "./utils/csv-util";
 import { FileUtil } from "./utils/file-util";
 import { QueueUtil } from "./utils/queue-util";
 
-export default async function concurrentReader(
+export default async function csvConcurrentReader(
     csvPath: string | ReadStream,
     callback: Callback,
     concurrency: number,
