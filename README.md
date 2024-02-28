@@ -44,16 +44,6 @@ Main function: `csvConcurrentReader(filePath, callback, concurrency, queueSize?,
 | `queueSize`  | `number`                   |   10000   | The total size of the internal queue.                                                                                     |
 | `options`    | `object`                   |     -     | CSV parsing options. Refer to the documentation of [csv-parser](https://github.com/mafintosh/csv-parser) for more details |
 
-
-### Callback Function Signature
-The callback function should have the following signature:
-
-```javascript
-async function callback(data) {
-  // Actions to perform with the data from the CSV row
-}
-```
-
 ### Dependencies
 - [fastq](https://github.com/mcollina/fastq): A lightweight, high-performance task queue.
 - [csv-parser](https://github.com/mafintosh/csv-parser): A CSV parsing library.
