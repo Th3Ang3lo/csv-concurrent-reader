@@ -1,12 +1,15 @@
 {
   "name": "csv-concurrent-reader",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "test": "vitest",
     "test:run": "vitest --run",
-    "build": "tsc && tsc-alias"
+    "build": "tsup"
   },
   "keywords": [],
   "author": "Angelo Soares <github.com/Th3Ang3lo>",
@@ -17,11 +20,15 @@
     "eslint": "^8.56.0",
     "tsc-alias": "^1.8.8",
     "tsconfig-paths": "^4.2.0",
+    "tsup": "8.0.2",
     "typescript": "^5.3.3",
     "vitest": "1.3.1"
   },
   "dependencies": {
     "csv-parser": "3.0.0",
     "fastq": "1.17.1"
+  },
+  "exports": {
+    ".": "./dist/index.js"
   }
 }
