@@ -11,10 +11,6 @@ describe(`Testing "${name}" function`, () => {
             callback: vi.fn(),
         };
 
-        mock.callback.mockImplementation(
-            async () => new Promise((resolve) => setTimeout(resolve, 10)),
-        );
-
         const callbackMock = vi.spyOn(mock, "callback");
 
         const filePath = path.resolve(__dirname, "files", "test.csv");
@@ -50,10 +46,6 @@ describe(`Testing "${name}" function`, () => {
         const mock = {
             callback: vi.fn(),
         };
-
-        mock.callback.mockImplementation(
-            async () => new Promise((resolve) => setTimeout(resolve, 10)),
-        );
 
         const filePath = path.resolve(
             __dirname,

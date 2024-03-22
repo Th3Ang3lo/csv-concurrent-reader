@@ -13,6 +13,8 @@ export class QueueUtil {
         }
 
         async function handleCallback(data: any) {
+            await new Promise((resolve) => setTimeout(resolve, 5));
+
             await callback(data);
         }
 
